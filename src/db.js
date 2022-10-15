@@ -5,11 +5,10 @@ const sequelize=new Sequelize(DB_NAME,DB_USER,DB_PASSWORD,{
     host:   DB_HOST,
     dialect:"mysql",
     pool: {
-        max: 15,
-        min: 5,
-        idle: 20000,
-        evict: 15000,
-        acquire: 30000
+        max: 100,
+        min: 0,
+        idle: 200000,
+        acquire: 1000000,
       },
     define:{
         timestamps:false
