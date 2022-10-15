@@ -9,16 +9,16 @@ const sequelize=new Sequelize(DB_NAME,DB_USER,DB_PASSWORD,{
     }
 });
 
-(async()=>{
+/*(async()=>{
     try {
     await sequelize.authenticate();
-    //await sequelize.sync();
+    await sequelize.sync();
     
     console.log('Conectado a base de datos')
     } catch (error) {
         console.log('Fallo en la conexion')
     }
     
-})()
+})()*/
 
 module.exports=sequelize;
