@@ -8,7 +8,7 @@ app.get('/',async(req,res)=>{
 });
 
 
-//app.use('/equipos',require('./routes/equipos'));
+app.use('/equipos',require('./routes/equipos'));
 app.use('/paises',require('./routes/paises'));
 
 
