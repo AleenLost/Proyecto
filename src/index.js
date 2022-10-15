@@ -7,10 +7,10 @@ app.get('/',async(req,res)=>{
     res.json(saludo);
 });
 
-/*
-app.use('/equipos',require('./routes/equipos'));
-app.use('/paises',require('./routes/paises'))
-*/
+
+//app.use('/equipos',require('./routes/equipos'));
+app.use('/paises',require('./routes/paises'));
+
 
 app.listen(PORT);
 console.log('Servidor en el puerto',PORT);
